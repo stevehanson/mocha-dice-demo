@@ -1,7 +1,7 @@
 {
   "name": "mocha-dice-demo",
   "version": "0.0.1",
-  "description": "Sample app to demo unit testing in Node.js using Mocha and Expect.js",
+  "description": "Sample app to demo unit testing in Node.js using Mocha and Chai",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
@@ -17,6 +17,6 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "~1.18.2",
-    "expect.js": "~0.3.1"
+    "chai": "~1.9.1"
   }
 }

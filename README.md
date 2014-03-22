@@ -1,6 +1,6 @@
 # Mocha Dice Test
 
-Very simple demo of the Node.js testing framework, [Mocha](http://visionmedia.github.io/mocha/) with [Expect.js](https://github.com/LearnBoost/expect.js/) assertion toolkit.
+Very simple demo of the Node.js testing framework, [Mocha](http://visionmedia.github.io/mocha/), with [Chai](http://chaijs.com/) assertion library.
 
 ## To Run
 

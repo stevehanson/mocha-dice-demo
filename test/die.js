@@ -1,6 +1,6 @@
 'use strict';
 
-var expect = require('expect.js'),
+var expect = require('chai').expect,
     Die = require('../app/Die.js');
 
 describe('Die', function() {
@@ -43,11 +43,11 @@ describe('Die', function() {
 
   describe('num rolls', function() {
     it('should start at 0', function() {
-      expect(new Die().numRolls).to.be(0)
+      expect(new Die().numRolls).to.equal(0)
     })
 
     it('should increment after rolling', function() {
-      expect(die.numRolls).to.be(1)
+      expect(die.numRolls).to.equal(1)
     })
 
   })
