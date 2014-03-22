@@ -1,5 +1,5 @@
 {
-  "name": "dice-mocha-demo",
+  "name": "mocha-dice-demo",
   "version": "0.0.1",
   "description": "Sample app to demo unit testing in Node.js using Mocha and Expect.js",
   "main": "index.js",
