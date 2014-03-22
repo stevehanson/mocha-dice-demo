@@ -19,8 +19,7 @@ describe('Dice', function() {
     })
 
     it('can be set via constructor', function() {
-      var dice = new Dice(12);
-      expect(dice.numDie).to.be.equal(12)
+      expect(new Dice(12).numDie).to.be.equal(12)
     })
   })
 

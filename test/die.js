@@ -43,8 +43,7 @@ describe('Die', function() {
 
   describe('num rolls', function() {
     it('should start at 0', function() {
-      var die = new Die();
-      expect(die.numRolls).to.be(0)
+      expect(new Die().numRolls).to.be(0)
     })
 
     it('should increment after rolling', function() {
