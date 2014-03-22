@@ -6,7 +6,6 @@ var expect = require('expect.js'),
 describe('Dice', function() {
   describe('roll', function() {
     it('should be a number', function() {
-      //var dice = new Dice();
       var res = new Dice().roll();
       expect(res).to.be.a('string');
     })
@@ -32,7 +31,7 @@ describe('Dice', function() {
       expect(dice.numRolls).to.be(0)
     })
 
-    it('should be increment after rolling', function() {
+    it('should increment after rolling', function() {
       var dice = new Dice();
       dice.roll();
       expect(dice.numRolls).to.be(1)
