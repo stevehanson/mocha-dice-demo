@@ -7,7 +7,7 @@ describe('Dice', function() {
   describe('roll', function() {
     it('should be a number', function() {
       var res = new Dice().roll();
-      expect(res).to.be.a('string');
+      expect(res).to.be.a('number');
     })
 
     it('should be between 1 and 6', function() {
