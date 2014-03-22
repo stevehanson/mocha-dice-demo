@@ -1,6 +1,6 @@
 'use strict';
 
-var Dice = function() {
+var Die = function() {
   this.lastRoll = null;
   this.numRolls = 0;
 }
@@ -10,10 +10,10 @@ function randomNum(low, high) {
 }
 
 
-Dice.prototype.roll = function() {
+Die.prototype.roll = function() {
   this.lastRoll = randomNum(1,6);
   this.numRolls++;
   return this.lastRoll;
 }
 
-module.exports = Dice;
+module.exports = Die;
