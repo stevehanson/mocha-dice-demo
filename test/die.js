@@ -3,7 +3,7 @@
 var expect = require('expect.js'),
     Die = require('../app/Die.js');
 
-describe('Dice', function() {
+describe('Die', function() {
 
   var die;
   var roll;
@@ -20,6 +20,18 @@ describe('Dice', function() {
 
     it('should be between 1 and 6', function() {
       expect(roll).to.be.within(1,6)
+    })
+
+    it('should be fairly distributed between 1 and 6', function() {
+      var numRuns = 1000000; // 1 million
+      var sum = 0;
+      var delta = 0.01;
+      for(var i = 0; i < numRuns; i++) {
+        sum += die.roll()
+      }
+      var ave = sum/numRuns;
+
+      expect(ave).to.be.within(3.5 - delta, 3.5 + delta)
     })
   })
 
